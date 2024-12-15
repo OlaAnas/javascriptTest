@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/review.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="Media/whitelogo.png" alt="Homepage Image" />
+      </a>
+    </header>
+
+    <aside class="boxes">
+      <a href="Aboutme.html">About me</a>
+      <a href="work.html">Projects</a>
+      <a href="interview.html">interview</a>
+      <a href="review.html">Contact</a>
+    </aside>
+
+    <aside class="contact-form">
+      <!-- Container for the contact form -->
+      <h2>Contact Me</h2>
+      <!-- Heading for the contact form -->
+      <form
+        action="mailto:ola.anas.alk@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <!-- Sets up the form to send data to an email -->
+        <label for="name">Name:</label>
+        <!-- Label for the name input -->
+        <input type="text" id="name" name="name" required />
+        <!-- Input field for the user's name, marked as required -->
+
+        <label for="email">Email:</label>
+        <!-- Label for the email input -->
+        <input type="email" id="email" name="email" required />
+        <!-- Input field for the user's email, marked as required -->
+
+        <label for="message">Message:</label>
+        <!-- Label for the message textarea -->
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- Textarea for the user's message, with a minimum of 5 rows, marked as required -->
+
+        <button type="submit">Send Message</button>
+        <!-- Submit button to send the form -->
+      </form>
+    </aside>
+
+    <footer>
+      <a href="https://www.instagram.com/ola.anas/" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/ola-alkhousi-449945202/"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/OlaAnas" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.google.com/maps"
+        target="_blank"
+        ><i class="fa-solid fa-location-dot"></i
+      ></a>
+      <a href="#phone-popup" class="phone-icon"><i class="fas fa-phone"></i></a>
+      <a href="#email-popup" class="email-icon"
+        ><i class="fa-solid fa-g"></i
+      ></a>
+
+      <!--popup for the phone number and the email adress-->
+      <aside id="phone-popup" class="popup">
+        <p class="popups">+316000000</p>
+        <a href="#" class="close">Close</a>
+      </aside>
+      <aside id="email-popup" class="popup">
+        <p class="popups">my.email@email.com</p>
+        <a href="#" class="close">Close</a>
+      </aside>
+
+      <aside id="overlay"></aside>
+      <p id="copyright">© 2024 Ola Alkhousi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+body {
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+  background-color: #260f18; /* Sets a dark background color */
+  margin: 0; /* Removes default margin */
+}
+
+header {
+  background-color: #260f18; /* Sets a dark background color for the header */
+  padding: 10px; /* Adds padding around the header */
+  text-align: center; /* Centers the text inside the header */
+}
+
+a {
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+
+.boxes {
+  display: flex; /* Displays children in a row (flexbox layout) */
+  justify-content: center; /* Centers the items horizontally */
+  gap: 50px; /* Adds space between the items */
+  margin-top: 100px; /* Adds space on top */
+  margin-bottom: 70px; /* Adds space at the bottom */
+}
+
+.boxes a {
+  padding: 10px 30px; /* Adds padding inside each link */
+  background-color: #725c46; /* Sets a brown background color */
+  color: white; /* Sets the text color to white */
+  text-align: center; /* Centers the text inside the link */
+  border-radius: 200px; /* Makes the link have rounded corners */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering */
+  transition: transform 0.3s, background-color 0.3s; /* Adds a smooth transition effect */
+  font-size: 20px; /* Sets the font size */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family */
+  text-transform: uppercase; /* Makes the text uppercase */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.boxes a:hover {
+  transform: scale(1.1); /* Scales up the link when hovered */
+  background-color: #a0522d; /* Changes the background color when hovered */
+  text-decoration: none; /* Ensures no underline on hover */
+}
+
+.rightbox {
+  display: flex; /* Displays children in a row (flexbox layout) */
+  flex-direction: row; /* Ensures items are aligned horizontally */
+  padding: 50px; /* Adds padding inside the box */
+  background-color: #524b63; /* Sets a dark purple background color */
+  border-radius: 20px; /* Rounds the corners of the box */
+  margin-left: 50px; /* Adds space on the left side */
+  margin-right: 50px; /* Adds space on the right side */
+  margin-top: 50px; /* Adds space at the top */
+  margin-bottom: 50px; /* Adds space at the bottom */
+}
+
+.rightphoto img {
+  width: 300px; /* Sets the width of the image */
+  justify-content: left; /* Aligns the image horizontally */
+  border-radius: 20px; /* Rounds the corners of the image */
+  margin-left: 30px; /* Adds space on the left of the image */
+}
+
+.righttext {
+  justify-content: right; /* Aligns the text horizontally */
+  font-size: 20px; /* Sets the font size */
+  padding: 50px; /* Adds padding inside the text container */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adds a semi-transparent black background */
+  border-radius: 40px; /* Rounds the corners */
+  margin-left: 30px; /* Adds space on the left side */
+}
+
+.leftbox {
+  display: flex; /* Displays children in a row (flexbox layout) */
+  flex-direction: row; /* Ensures items are aligned horizontally */
+  padding: 50px; /* Adds padding inside the box */
+  background-color: #004346; /* Sets a dark teal background color */
+  border-radius: 20px; /* Rounds the corners of the box */
+  margin-left: 50px; /* Adds space on the left side */
+  margin-right: 50px; /* Adds space on the right side */
+  margin-top: 50px; /* Adds space at the top */
+  margin-bottom: 50px; /* Adds space at the bottom */
+}
+
+.leftphoto img {
+  width: 300px; /* Sets the width of the image */
+  justify-content: left; /* Aligns the image horizontally */
+  border-radius: 20px; /* Rounds the corners of the image */
+  margin-right: 30px; /* Adds space on the right of the image */
+}
+
+.lefttext {
+  justify-content: right; /* Aligns the text horizontally */
+  font-size: 20px; /* Sets the font size */
+  padding: 50px; /* Adds padding inside the text container */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adds a semi-transparent black background */
+  border-radius: 40px; /* Rounds the corners */
+}
+
+h2 {
+  color: #f4e1d2; /* Sets a light cream color for the heading */
+  font-size: 30px; /* Sets the font size */
+  text-align: center; /* Centers the heading text */
+  margin-top: 30px; /* Adds space on top */
+  margin-bottom: 50px; /* Adds space at the bottom */
+  font-family: "Courier New", Courier, monospace; /* Sets the font family */
+}
+
+h3 {
+  color: #d2b48c; /* Sets a tan color for the subheading */
+  font-size: 20px; /* Sets the font size */
+  text-align: left; /* Aligns the subheading text to the left */
+  margin-top: 30px; /* Adds space on top */
+  margin-bottom: 50px; /* Adds space at the bottom */
+  margin-left: 50px; /* Adds space on the left side */
+  font-family: "Courier New", Courier, monospace; /* Sets the font family */
+}
+
+p {
+  color: white; /* Sets the text color to white */
+  font-size: 20px; /* Sets the font size */
+  text-align: center; /* Centers the text */
+  margin-top: 30px; /* Adds space on top */
+  margin-bottom: 50px; /* Adds space at the bottom */
+  font-family: "Courier New", Courier, monospace; /* Sets the font family */
+}
+
+.hobbys {
+  display: flex; /* Displays children in a column (flexbox layout) */
+  flex-direction: column; /* Aligns items vertically */
+  align-items: center; /* Centers items horizontally */
+  margin-top: 20px; /* Adds space on top */
+  background-color: #004346; /* Sets a dark teal background color */
+  margin: 50px; /* Adds margin around the element */
+  border-radius: 20px; /* Rounds the corners */
+}
+
+.hobby {
+  display: flex; /* Displays children in a row (flexbox layout) */
+  justify-content: space-between; /* Spaces out the items */
+  width: 80%; /* Sets the width to 80% of the parent */
+  margin-bottom: 20px; /* Adds space at the bottom */
+}
+
+.hobbystext {
+  flex: 1; /* Makes the text container take up available space */
+  padding: 20px; /* Adds padding inside the text container */
+  text-align: left; /* Aligns the text to the left */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adds a semi-transparent black background */
+  border-radius: 10px; /* Rounds the corners */
+  margin-top: 40px; /* Adds space on top */
+  margin-bottom: 30px; /* Adds space at the bottom */
+}
+
+.hobbystext p {
+  margin-top: 130px; /* Adds space on top of the paragraph */
+}
+
+.hobbysvideo {
+  flex: 1; /* Makes the video container take up available space */
+  padding: 20px; /* Adds padding inside the video container */
+  text-align: center; /* Centers the video */
+  margin-top: 20px; /* Adds space on top */
+}
+
+.hobbysvideo .video {
+  max-width: 350px; /* Sets the maximum width for the video */
+  border-radius: 10px; /* Rounds the corners of the video */
+  border: 1px solid #ccc; /* Adds a border around the video */
+}
+
+.mytable {
+  width: 80%; /* Sets the table width to 80% of the parent */
+  margin-top: 20px; /* Adds space on top */
+  background-color: #ffffff; /* Sets a white background color */
+  padding: 20px; /* Adds padding inside the table container */
+  border-radius: 10px; /* Rounds the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  margin-bottom: 70px; /* Adds space at the bottom */
+  font-family: "consolas", sans-serif; /* Sets the font family */
+}
+
+table {
+  width: 100%; /* Sets the table to take up the full width */
+  border-collapse: collapse; /* Ensures borders are collapsed into one */
+  text-align: center; /* Centers text in the table */
+}
+
+th {
+  background-color: #004346; /* Sets a dark teal background color for headers */
+  color: white; /* Sets the text color to white */
+  padding: 12px 15px; /* Adds padding inside header cells */
+  text-align: left; /* Aligns text to the left in header */
+}
+
+td {
+  background-color: #fff; /* Sets a white background color for table data */
+  padding: 12px 15px; /* Adds padding inside data cells */
+  text-align: left; /* Aligns text to the left in data cells */
+  border-bottom: 1px solid #ddd; /* Adds a light border below each row */
+}
+
+a {
+  color: #725c46; /* Sets a brown color for links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.mytable a:hover {
+  text-decoration: underline; /* Underlines the link when hovered */
+  color: #a0522d; /* Changes the color of the link when hovered */
+}
+
+.text {
+  text-align: center; /* Centers the text */
+  margin-bottom: 20px; /* Adds space at the bottom */
+  margin-top: 20px; /* Adds space at the top */
+  padding: 20px; /* Adds padding inside the text container */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adds a semi-transparent black background */
+  margin: 50px; /* Adds margin around the text container */
+  border-radius: 20px; /* Rounds the corners */
+}
+
+footer {
+  text-align: center; /* Centers the footer text */
+  margin: 20px 0; /* Adds space on the top and bottom */
+  margin-top: 100px; /* Adds extra space on top */
+  margin-bottom: 50px; /* Adds space at the bottom */
+}
+
+footer a {
+  text-decoration: none; /* Removes underline from footer links */
+  color: white; /* Sets the link color to white */
+  margin: 0 10px; /* Adds margin between links */
+  font-size: 30px; /* Sets the font size */
+  transition: color 0.3s ease; /* Adds smooth color transition */
+}
+
+footer a:hover {
+  color: #a0522d; /* Changes link color when hovered */
+}
+
+.popups {
+  display: flex; /* Displays children in a row (flexbox layout) */
+  justify-content: center; /* Centers the popup horizontally */
+  align-items: center; /* Centers the popup vertically */
+  font-size: 20px; /* Sets the font size */
+  font-family: cursive; /* Sets the font to cursive */
+}
+
+.popup {
+  display: none; /* Hides the popup by default */
+  position: fixed; /* Fixes the position on the screen */
+  top: 50%; /* Positions it vertically at the center */
+  left: 50%; /* Positions it horizontally at the center */
+  transform: translate(-50%, -50%); /* Centers it perfectly */
+  background: #0f1921; /* Sets a dark background color */
+  padding: 40px; /* Adds padding inside the popup */
+  color: #fff; /* Sets the text color to white */
+  border-radius: 50px; /* Rounds the corners */
+  width: 200px; /* Sets a fixed width */
+  text-align: center; /* Centers the text */
+  z-index: 1001; /* Ensures the popup is on top of other elements */
+}
+
+#phone-popup:target,
+#email-popup:target {
+  display: block; /* Displays the popup when targeted */
+}
+
+#overlay {
+  display: none; /* Hides the overlay by default */
+  position: fixed; /* Fixes the overlay's position */
+  top: 10px; /* Positions the overlay at the top */
+  left: 10px; /* Positions the overlay at the left */
+  width: 100%; /* Makes the overlay take full width */
+  height: 100%; /* Makes the overlay take full height */
+  background: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent black background */
+  z-index: 1000; /* Ensures the overlay is below the popup */
+}
+
+#phone-popup:target ~ #overlay,
+#email-popup:target ~ #overlay {
+  display: block; /* Displays the overlay when popup is targeted */
+}
+
+.close {
+  display: block; /* Displays the close button */
+  margin-top: 15px; /* Adds space on top */
+  color: #725c46; /* Sets the color of the close button */
+  text-decoration: none; /* Removes underline from the close button */
+}
+
+#copyright {
+  margin-top: 30px; /* Adds space on top */
+  margin-bottom: -20px; /* Adds negative space at the bottom */
+  color: #f4e1d2; /* Sets a light cream color */
+  text-align: center; /* Centers the text */
+  font-size: 17px; /* Sets the font size */
+  font-family: "Lato", sans-serif; /* Sets the font family */
+}

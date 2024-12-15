@@ -1,0 +1,186 @@
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures full-screen height */
+  background-color: #260f18; /* Background color of the page */
+  margin: 0;
+}
+header {
+  background-color: #260f18;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  display: flex; /* Enables flexbox layout for easy alignment */
+  justify-content: center; /* Centers items horizontally within the container */
+  gap: 50px; /* Adds space between each menu box */
+  margin-top: 100px; /* Adds space above the menu section */
+  margin-bottom: 70px; /* Adds space below the menu section */
+}
+.boxes a {
+  padding: 10px 30px; /* Adds padding inside the box for a balanced look */
+  background-color: #725c46; /* Dark brown background color */
+  color: white; /* White text color to stand out against the dark background */
+  text-align: center; /* Centers text within each box */
+  border-radius: 200px; /* Rounds the corners for a softer appearance */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate clickability */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+  font-size: 20px; /* Sets a consistent font size for all boxes */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Sets a font family for the text */
+  text-transform: uppercase; /* Converts text to uppercase for a bold look */
+  letter-spacing: 2px; /* Adds space between letters for a more distinct appearance */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.boxes a:hover {
+  transform: scale(1.1); /* Slightly enlarges the box on hover */
+  background-color: #a0522d; /* Changes the background color on hover */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.contact-form {
+  background-color: white; /* Sets the background color of the form */
+  padding: 20px; /* Adds padding inside the form */
+  border-radius: 15px; /* Rounds the corners of the form */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  width: 100%; /* Form takes full width of the container */
+  max-width: 500px; /* Sets maximum width for form */
+  box-sizing: border-box; /* Includes padding and border in element's total width and height */
+  align-items: center; /* Centers the form vertically */
+  justify-content: center; /* Centers the form horizontally */
+  margin: 0 auto; /* Centers the form horizontally */
+  margin-bottom: 100px; /* Adds space below the form */
+}
+
+.contact-form h2 {
+  margin-bottom: 20px; /* Adds space below the heading */
+  font-size: 24px; /* Sets the font size of the heading */
+  color: #725c46; /* Dark gray color for the text */
+  text-align: center; /* Centers the heading text */
+  font-family: "Poppins", sans-serif; /* Sets the font family for the form*/
+}
+
+.contact-form label {
+  font-size: 14px; /* Sets font size of labels */
+  color: #725c46; /* Medium gray color for the text */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Makes inputs and textarea full width */
+  padding: 10px; /* Adds padding inside the input and textarea */
+  margin-top: 5px; /* Adds space above each input */
+  margin-bottom: 15px; /* Adds space below each input */
+  margin-left: -10px;
+  border: 1.5px solid #ddd; /* Sets a light gray border */
+  border-radius: 10px; /* Rounds the corners of input fields */
+  font-size: 14px; /* Sets font size for input text */
+}
+
+.contact-form button {
+  width: 100%; /* Makes button full width */
+  padding: 10px; /* Adds padding inside the button */
+  border: none; /* Removes default border */
+  background-color: #725c46; /* Dark gray background for the button */
+  color: white; /* White color for the button text */
+  font-size: 16px; /* Sets font size of the button text */
+  border-radius: 10px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.contact-form button:hover {
+  background-color: #d2b48c; /* Changes button color on hover */
+}
+
+/*start footer styling*/
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #a0522d;
+}
+
+/* starting styling my phone and my email as a popup */
+.popups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position to stay in view */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjusts to true center */
+  background: #0f1921; /* Dark background for popup */
+  padding: 40px; /* Space around the popup content */
+  color: #fff; /* White text for contrast */
+  border-radius: 50px; /* Rounded corners */
+  width: 200px; /* Fixed width */
+  text-align: center; /* Centered text inside popup */
+  z-index: 1001; /* High stacking order to appear above other content */
+}
+
+#phone-popup:target,
+#email-popup:target {
+  display: block; /* Display popup when targeted */
+}
+
+#overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Covers entire screen */
+  top: 10px; /* Start from top */
+  left: 10px; /* Start from left */
+  width: 100%; /* Full width of screen */
+  height: 100%; /* Full height of screen */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+  z-index: 1000; /* Behind the popup content but above other elements */
+}
+
+#phone-popup:target ~ #overlay,
+#email-popup:target ~ #overlay {
+  display: block; /* Display overlay when popup is targeted */
+}
+
+.close {
+  display: block; /* Makes it a block element */
+  margin-top: 15px; /* Space above the button */
+  color: #725c46; /* Orange color to match icons */
+  text-decoration: none; /* Remove underline */
+}
+
+/* End of styling my phone and my email as a popup */
+
+/*styling the copyrights to the bottom of my website*/
+#copyright {
+  margin-top: 30px; /* Space above the text */
+  margin-bottom: -20px; /* Space below the text */
+  color: #f4e1d2;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+}
+
+/*End footer styling*/
