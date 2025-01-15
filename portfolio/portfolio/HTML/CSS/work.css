@@ -6,7 +6,6 @@ body {
   margin: 0;
 }
 header {
-  background-color: #260f18;
   padding: 10px;
   text-align: center;
 }
@@ -17,12 +16,13 @@ a {
 }
 
 .boxes {
-  display: flex; /* Enables flexbox layout for easy alignment */
-  justify-content: center; /* Centers items horizontally within the container */
-  gap: 50px; /* Adds space between each menu box */
-  margin-top: 100px; /* Adds space above the menu section */
-  margin-bottom: 70px; /* Adds space below the menu section */
+  display: inline-block; /* Displays items inline */
+  justify-content: center; /* Centers the items horizontally */
+  list-style: none; /* Removes default bullet points */
+  margin: 30px; /* Adds space around the list */
 }
+
+
 .boxes a {
   padding: 10px 30px; /* Adds padding inside the box for a balanced look */
   background-color: #725c46; /* Dark brown background color */

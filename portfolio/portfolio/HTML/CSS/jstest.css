@@ -1,0 +1,88 @@
+/* Style for the cookie notification */
+#cookieNotification {
+    position: fixed; /* Keep the notification fixed at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Stretch to full width of the screen */
+    background-color: rgb(16, 3, 92); /* Dark background color */
+    color: #fff; /* White text color for contrast */
+    padding: 15px; /* Add some padding for better appearance */
+    text-align: center; /* Center-align the text */
+    font-size: 16px; /* Adjust font size */
+    box-shadow: 0 -2px 5px rgba(7, 60, 90, 0.2); /* Add a shadow for depth */
+    }
+    
+    /* Style for the accept button */
+#acceptButton {
+    background-color:rgb(75, 10, 31); /* Green button color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Match font size */
+    margin-left: 10px; /* Add spacing between text and button */
+    border-radius: 5px; /* Add rounded corners */
+    }
+    
+    /* Hover effect for the accept button */
+#acceptButton:hover {
+    background-color:rgb(49, 6, 20); /* Slightly darker green on hover */
+    }
+
+
+
+
+    
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+#darkModeButton {
+        cursor: pointer;                 /* Makes the cursor a pointer (hand icon) */
+        padding: 20px;                   /* Adds space inside the button */
+        background-color: #ddd;          /* Light gray background */
+        border: none;                    /* Removes default border */
+        border-radius: 20px;              /* Rounds the button's corners */
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 70px;
+        margin-bottom: 50px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+#greeting {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#countdown {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#menuButton {
+    display: none;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 300px;
+
+
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
